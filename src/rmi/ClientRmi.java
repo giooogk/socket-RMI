@@ -3,7 +3,7 @@ package rmi;
 import java.rmi.Naming;
 import java.util.Scanner;
 
-import main.java.RemoteInterface;
+import chatbot.RemoteInterface;
 
 public class ClientRmi {
     public static void main(String[] args) {
@@ -21,17 +21,21 @@ public class ClientRmi {
                 System.out.println("4. Sair");
 
                 message = scanner.nextLine();
+                if (message.equalsIgnoreCase("4")) {
+                    obj.handleMessage(message);
+                    System.out.println("Saindo...");
+                    break;
+                } else {
+                    response = obj.handleMessage(message);
 
-                response = obj.handleMessage(message);
-
-                if (response.contains(obj.missingOptionFlag())){
-                    System.out.println("Opção inválida. Tente novamente.");
-                }
-                else {
-                    System.out.println("Servidor: " + response);
+                    if (response.contains(obj.missingOptionFlag())){
+                        System.out.println("Opção inválida. Tente novamente.");
+                    }
+                    else {
+                        System.out.println("Servidor: " + response);
+                    }
                 }
             }
-            System.out.println("Saindo...");
 
             scanner.close();
 
