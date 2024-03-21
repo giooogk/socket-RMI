@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a9c9038-bc55-4008-8778-bf0dac038c8e" name="Changes" comment="Iniciando rmi e socket">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ClientRmi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ClientRmi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RemoteInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RemoteInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ServerRmi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServerRmi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/ClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/ClientSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/ServerSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/ServerSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/SocketChatBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/SocketChatBot.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,35 +34,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClientRmi.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ClientSocket.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Server.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ServerRmi.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ServerSocket.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Giovanna/IdeaProjects/parte1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/Giovanna/IdeaProjects/socketService/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Client.executor": "Run",
+    "Application.ClientRmi.executor": "Run",
+    "Application.ClientSocket.executor": "Run",
+    "Application.Server.executor": "Run",
+    "Application.ServerRmi.executor": "Run",
+    "Application.ServerSocket.executor": "Run",
+    "Application.socket.ClientSocket.executor": "Run",
+    "Application.socket.ServerSocket.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Giovanna/IdeaProjects/parte1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Giovanna/IdeaProjects/socketService/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;PLAIN_TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Application.ClientRmi">
+}]]></component>
+  <component name="RunManager" selected="Application.socket.ClientSocket">
     <configuration name="ClientRmi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.ClientRmi" />
       <module name="socketService" />
@@ -101,12 +104,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.ServerSocket" />
+    <configuration name="socket.ClientSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.ClientSocket" />
       <module name="socketService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.java.*" />
+          <option name="PATTERN" value="socket.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="socket.ServerSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="socket.ServerSocket" />
+      <module name="socketService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="socket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,10 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.socket.ClientSocket" />
+        <item itemvalue="Application.socket.ServerSocket" />
         <item itemvalue="Application.ClientRmi" />
         <item itemvalue="Application.ServerRmi" />
         <item itemvalue="Application.ClientSocket" />
-        <item itemvalue="Application.ServerSocket" />
       </list>
     </recent_temporary>
   </component>

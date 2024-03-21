@@ -7,6 +7,7 @@ import chatbot.RemoteInterface;
 
 public class SocketChatBot extends UnicastRemoteObject implements RemoteInterface {
     public SocketChatBot() throws RemoteException {
+        return;
     }
 
     public String sayHello() throws RemoteException {

@@ -11,6 +11,10 @@ import chatbot.RemoteInterface;
 public class ServerSocket implements Runnable {
     private static final int PORTA = 8081;
 
+    public static void main(String[] args) {
+        new ServerSocket().run();
+    }
+
     @Override
     public void run() {
         SocketChatBot chatbot;
@@ -33,6 +37,7 @@ public class ServerSocket implements Runnable {
             while (!message.equalsIgnoreCase("4")){
                 clientSocket = serverSocket.accept();
                 System.out.println("Conexão estabelecida com: " + clientSocket);
+
                 BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 

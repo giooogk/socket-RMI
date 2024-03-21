@@ -25,6 +25,12 @@ public class ClientSocket {
             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
             while (!input.equalsIgnoreCase("4"))
             {
+                System.out.println("Escolha uma opção:");
+                System.out.println("1. Diga olá");
+                System.out.println("2. Como você está?");
+                System.out.println("3. Bom dia");
+                System.out.println("4. Sair");
+
                 input = scanner.nextLine();
                 out.println(input);
                 String response = in.readLine();
