@@ -8,5 +8,6 @@ public interface RemoteInterface extends Remote {
     String sayTudoBem() throws RemoteException;
     String bomDia() throws RemoteException;
     String sayBay() throws RemoteException;
-    String sendMessage(String message) throws RemoteException;
+    String handleMessage(String message) throws RemoteException;
+    String missingOptionFlag() throws RemoteException;
 }
