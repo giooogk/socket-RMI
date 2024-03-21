@@ -1,12 +1,12 @@
-package rmi;
+package socket;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
-import main.java.RemoteInterface;
+import chatbot.RemoteInterface;
 
-public class RMIChatBot extends UnicastRemoteObject implements RemoteInterface {
-    public RMIChatBot() throws RemoteException {
+public class SocketChatBot extends UnicastRemoteObject implements RemoteInterface {
+    public SocketChatBot() throws RemoteException {
     }
 
     public String sayHello() throws RemoteException {
